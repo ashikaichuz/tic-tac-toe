@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play with Friend - Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-gamepad"></i> Tic Tac Toe</h1>
+    
+    <div class="game-info" id="game-status">Player X's turn</div>
+    
+    <div class="board" id="board"></div>
+    
+    <div class="controls">
+      <button id="reset-btn"><i class="fas fa-redo"></i> Reset Game</button>
+      <button onclick="location.href='index.html'"><i class="fas fa-home"></i> Home</button>
+    </div>
+  </div>
+  
+  <!-- Game Over Modal -->
+  <div class="modal" id="game-over-modal">
+    <div class="modal-content">
+      <h2 id="result-title">Game Over</h2>
+      <p id="result-message"></p>
+      <button id="play-again-btn"><i class="fas fa-redo"></i> Play Again</button>
+    </div>
+  </div>
+  
+  <script src="play-with-friend.js"></script>
+</body>
+</html>

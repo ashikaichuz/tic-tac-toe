@@ -44,8 +44,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
-    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)),
-                url('bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -152,7 +151,9 @@
   button:active {
     transform: translateY(0);
   }
-
+  .buttonBottomPadding {
+    margin-bottom: 5px;
+  }
   .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -234,7 +235,7 @@
   }
 
   .modal-content {
-    background-color: rgba(5, 72, 88, 0.95);;
+    background-color: rgba(5, 72, 88, 0.95);
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
